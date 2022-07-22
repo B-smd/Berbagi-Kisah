@@ -25,4 +25,7 @@ router.route("/:storyId/comments").post(addComment);
 // /api/stories/:storyId/comments/:commentId
 router.route("/:storyId/comments/:commentId").delete(removeComment);
 
+// 
+router.route("/").post(createStory);
+
 module.exports = router;
