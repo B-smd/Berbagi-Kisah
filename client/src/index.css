@@ -36,12 +36,12 @@ header {
 }
 
 .content{
-  font-family: bely, serif;
+  font-family: shimano-square, sans-serif;
 
-font-weight: 400;
-
-font-style: normal;
-
+  font-weight: 300;
+  
+  font-style: normal;
+  
 
 }
 
@@ -92,12 +92,12 @@ body {
     max-width: 1000px;
     background-color: Black;
 }
-h1, h2 {
-  font-family: bely, serif;
+h1, h2 { 
+  font-family: shimano-square, sans-serif;
 
-font-weight: 700;
+font-weight: 800;
 
-font-style: italic;
+font-style: normal;
 }
 h1 {
     margin-top: 0px;
@@ -110,8 +110,11 @@ h1 {
 }
 
 ul {
-  width: 100%;
-  text-align: center
+  width: 80%;
+  text-align: center;
+  right: 10%;
+  padding-right: 5%;
+
   
 }
 h3 {
@@ -172,7 +175,7 @@ a:hover, a:active, a:focus {
     top: -15%;
 
 }
-/* .user-logo {
+.user-logo {
     border: none;
     border-radius: 50%;
     width: 20%;
@@ -181,7 +184,7 @@ a:hover, a:active, a:focus {
     justify-content: center;
     align-items: center;
     margin: auto;
-} */
+}
 
 nav {
     background-color: black;

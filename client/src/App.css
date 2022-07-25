@@ -36,9 +36,6 @@
     transform: rotate(360deg);
   }
 }
-ul {
-  padding-right: 30px;
-}
 @media only screen and (min-width: 1024px) {
 }
 @media only screen and (min-width: 1024px) {
@@ -46,3 +43,4 @@ ul {
     display:flex;
   }
 }
+
