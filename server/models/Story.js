@@ -1,46 +1,47 @@
 const { Schema, model } = require('mongoose');
-const { validateEmail } = require('../utils/validator');
+const dateFormat = require('../utils/dateFormat');
 
 // Schema to create Student model
-const commentSchema = new Schema(
-  {
-    body: {
-      type: String,
-      required: true,
-      max: 280,
-    },
-    name: {
-      type: String,
-    },
-
-  }, 
-  {
-    id: true,
-    timestamps: true
-  }
-)
-        
-        
-// Schema to create a story model
 const storySchema = new Schema(
     {
-        story_text: {
+      storyText: {
+          type: String,
+          required: 'Please leave a story',
+          minlength: 1,
+          trim: true,
+      },
+      storyAuthor: {
+          type: String,
+          required: true,
+          trim: true,
+      },
+      createdAt: {
+          type: Date,
+          default: Date.now,
+          get: (timestamp) => dateFormat(timestamp),
+      },
+      comments: [
+          {
+            commentText: {
+              type: String,
+              required: true,
+              minlength: 1,
+              maxlength: 280,
+          },
+          commentAuthor: {
             type: String,
             required: true,
-            // max: 280,
-            min: 1,
         },
-        comments: [
-            commentSchema,
-        ],
-    },
-    {
-        timestamps: true,
-        id: true,
-    }
+        createdAt: {
+            type: Date,
+            default: Date.now,
+            get: (timestamp) => dateFormat(timestamp),
+        },
+      }
+    ],
 
-);
+  })
 
-const Story = model('story', storySchema);
+const Story = model('Story', storySchema);
 
 module.exports = Story;
