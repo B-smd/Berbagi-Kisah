@@ -2,14 +2,15 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 import HomePage from './pages/Home';
-import AboutMePage from './pages/AboutMe';
+import StoriesPage from './pages/Stories';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import Wrapper from './components/Wrapper';
 import Projects from './pages/Projects';
 import Resume from './pages/Resume';
 import ContactMe from './pages/ContactMe';
-
+// import "./App.css";
+// import ImageHoverZoom from "./components/imageHoverZoom";
 
 function App() {
   return (
@@ -18,17 +19,13 @@ function App() {
         <Header/>
         <Routes>
           <Route
-            path="/React-Portfolio"
-            element={<HomePage/>}
-          />
-          <Route
             path="/"
             element={<HomePage/>}
           />
 
           <Route
-            path="/aboutme"
-            element={<AboutMePage/>}
+            path="/Stories"
+            element={<StoriesPage/>}
           />
           <Route
             path="/projects"

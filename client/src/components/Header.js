@@ -4,17 +4,20 @@ import { Link } from 'react-router-dom';
 export default function Header() {
     return (
         <header>
-            <h1 style={{ color: "dodgerblue"}}>BAMBANG</h1>
             <nav>
                 <h4 className="displayed" id="navlinks">
-                    <Link to="/React-Portfolio">Home</Link>
-                    <Link to="aboutme">About me</Link>
-                    <Link to="projects">Portfolio</Link>
-                    <Link to="contact">Contact</Link>
-                    <Link to="resume">Resume</Link>
-
+                    <Link to="/">Home</Link>
+                    <Link to="stories">Stories</Link>
+                    <Link to="projects">Sign Up</Link>
+                    <Link to="contact">Login</Link>
+                    <Link to="resume">Logout</Link>
                 </h4>
             </nav>
+
+            <h1 style={{ color: "dodgerblue"}}>Life Stories Sharing</h1>
+            <h4 style= {{color: "aliceblue"}}>Sharing your life story to help another 
+                people who are struggling to move on and have positive life. Every story 
+                shared is a change to make someone feel less alone</h4>
     </header>
     );
 }

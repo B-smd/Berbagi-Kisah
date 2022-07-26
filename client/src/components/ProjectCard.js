@@ -1,6 +1,6 @@
 import React from "react";
 
-function ProjectCard(props) {
+function SignUp(props) {
     return (
         <div className="card">
             <img 
@@ -22,4 +22,4 @@ function ProjectCard(props) {
     );
 }
 
-export default ProjectCard;
+export default SignUp;

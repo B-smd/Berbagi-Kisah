@@ -1,13 +1,13 @@
 import React from 'react';
 
 
-export default function AboutMe() {
+export default function Stories() {
     return (
-        <div className='aboutme text-justify'>
+        <div className='stories text-justify'>
             
             
             <img className="user-logo" src ={`${process.env.PUBLIC_URL}/img/profile.jpeg`} alt="bambang"/>
-            <h2 className="text-center" style={{ color: "aquamarine"}}>About Me</h2>
+            <h2 className="text-center" style={{ color: "aquamarine"}}>Stories</h2>
             <p style={{ color: "powderblue"}}>
                 I am Bambang Sugiarto Micha Djaja a web developer and a graphic designer. I am an architect graduate from <a href="https://www.its.ac.id/arsitektur/">The Institut Teknologi Sepuluh Nopember (abbreviated as ITS) </a> 
                 Surabaya, Indonesia, on the 1st November, 1980. Since December 1984, I became an entrepreneur. This is my history of my entrepreneurship :  

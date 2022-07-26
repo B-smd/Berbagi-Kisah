@@ -1,6 +1,8 @@
 import React from "react";
 import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
+import { Link } from 'react-router-dom';
+
 
 const Hero = () => {
     const particlesInit = async (main) => {
@@ -24,7 +26,10 @@ const Hero = () => {
       options={{
         background: {
           color: {
-            value: "#0d47a1",
+            // value: "#0d47a1",
+            // value: "#004d4d",
+            // "zIndex": -1
+
           },
         },
         fpsLimit: 120,
@@ -95,14 +100,18 @@ const Hero = () => {
       }}
     />
             <div className="content">
-            <p><img src={`${process.env.PUBLIC_URL}/img/bs.jpeg`} alt="Bambang"/></p>
-                <h1 style={{ color: "cyan"}}>Life Stories Sharing</h1>
-                <ul style= {{color: "aliceblue"}}>Sharing your life story to help another 
+                <Link to="Stories"><p><img src={`${process.env.PUBLIC_URL}/img/bs.JPG`} alt="Bambang" width="500"/></p></Link>
+                {/* <h1 style={{ color: "cyan"}}>Life Stories Sharing</h1> */}
+                {/* <h6 style= {{color: "aliceblue"}}>Sharing your life story to help another 
                 people who are struggling to move on and have positive life. Every story 
-                shared is a change to make someone feel less alone</ul>
+                shared is a change to make someone feel less alone</h6> */}
             </div>
         </div>
     )
 }
 
 export default Hero
+                
+
+
+
