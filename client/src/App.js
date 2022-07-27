@@ -1,14 +1,14 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
+import WelcomePage from './pages/Welcome';
 import HomePage from './pages/Home';
-import StoriesPage from './pages/Stories';
-import Header from './components/Header';
+import Nav from './components/Nav';
 import Footer from './components/Footer';
 import Wrapper from './components/Wrapper';
-import Projects from './pages/Projects';
-import Resume from './pages/Resume';
-import ContactMe from './pages/ContactMe';
+// import Projects from './pages/Projects';
+import Donate from './pages/Donate';
+// import ContactMe from './pages/ContactMe';
 // import "./App.css";
 // import ImageHoverZoom from "./components/imageHoverZoom";
 
@@ -16,29 +16,29 @@ function App() {
   return (
     <Router>
       <Wrapper>
-        <Header/>
+        <Nav/>
         <Routes>
           <Route
             path="/"
-            element={<HomePage/>}
+            element={<WelcomePage/>}
           />
 
           <Route
-            path="/Stories"
-            element={<StoriesPage/>}
+            path="/Home"
+            element={<HomePage/>}
           />
-          <Route
+          {/* <Route
             path="/projects"
             element={<Projects/>}
-          />
+          /> */}
           <Route
-            path="/resume"
-            element={<Resume/>}
+            path="/donate"
+            element={<Donate/>}
           />
-          <Route
+          {/* <Route
             path="/contact"
             element={<ContactMe/>}
-          />
+          /> */}
         </Routes>
         <Footer/>
       </Wrapper>

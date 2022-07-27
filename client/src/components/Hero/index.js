@@ -101,17 +101,13 @@ const Hero = () => {
     />
             <div className="content">
                 <Link to="Stories"><p><img src={`${process.env.PUBLIC_URL}/img/bs.JPG`} alt="Bambang" width="500"/></p></Link>
-                {/* <h1 style={{ color: "cyan"}}>Life Stories Sharing</h1> */}
-                {/* <h6 style= {{color: "aliceblue"}}>Sharing your life story to help another 
+                <h1 style={{ color: "cyan"}}>Welcome</h1>
+                <ul style= {{color: "aliceblue"}}>Sharing your life story to help another 
                 people who are struggling to move on and have positive life. Every story 
-                shared is a change to make someone feel less alone</h6> */}
+                shared is a change to make someone feel less alone</ul>
             </div>
         </div>
     )
 }
 
 export default Hero
-                
-
-
-
