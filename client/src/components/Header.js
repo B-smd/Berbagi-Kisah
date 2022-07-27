@@ -10,7 +10,7 @@ export default function Header() {
                     <Link to="stories">Stories</Link>
                     <Link to="projects">Sign Up</Link>
                     <Link to="contact">Login</Link>
-                    <Link to="resume">Logout</Link>
+                    <Link to="resume">Donate</Link>
                 </h4>
             </nav>
 
