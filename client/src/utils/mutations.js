@@ -39,6 +39,14 @@ export const ADD_STORY = gql`
     }
 `;
 
+export const REMOVE_STORY = gql`
+    mutation removeStory($storyId: ID!){
+        removeStory(storyId: $storyId){
+            _id
+        }
+    }
+`;
+
 export const ADD_COMMENT = gql`
     mutation addComment($storyId: ID!, $commentText: String!) {
         addComment(storyId: $storyId, commentText: $commentText) {
@@ -50,6 +58,22 @@ export const ADD_COMMENT = gql`
                 _id
                 commentText
                 createdAt
+            }
+        }
+    }
+`;
+
+
+export const UPDATE_STORY = gql`
+    mutation updateStory($storyId: ID!, $storyText: String!) {
+        updateStory(storyId: $storyId, storyText: $storyText) {
+            _id
+            storyText
+            storyAuthor
+            createdAt
+            comments {
+                _id
+                commentText
             }
         }
     }
