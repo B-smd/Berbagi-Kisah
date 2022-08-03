@@ -23,7 +23,7 @@ const StoryList = ({
     };
 
     if (!stories.length) {
-        return <h3>No Stories Yet</h3>;
+        return <h3>Belum ada Kisah</h3>;
     }
 
     const handleUpdateBtn = (storyId, storyText) => {
@@ -104,7 +104,7 @@ const StoryList = ({
                                     className="btn btn-primary btn-block btn-squared"
                                     to={`/stories/${story._id}`}
                                 >
-                                    Join the discussion on this story.
+                                    Berikan komentar untuk kisah ini.
                                 </Link>
                             </div>
                         ))

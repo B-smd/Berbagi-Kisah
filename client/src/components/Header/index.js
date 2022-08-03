@@ -14,9 +14,9 @@ const Header = () => {
             <div className="container flex-row justify-space-between-lg justify-center align-center">
                 <div>
                     <Link className="text-light " to="/">
-                        <h1 className="m-0">Story Sharing</h1>
+                        <h1 className="m-0">Berbagi Kisah</h1>
                     </Link>
-                <p className="m-0">Share your story ...</p>
+                <p className="m-0">Berbagilah Kisah mu ...</p>
                     <Link style={{"margin": "auto"}} to="/"><img src="https://img.icons8.com/color/48/000000/start--v1.png" alt="Welcome" className="icon" width={"40"}/></Link>
                     <Link style={{"margin": "auto"}} to="home"><img src="https://img.icons8.com/fluent/48/000000/home--v1.png" alt="Home" className="icon" width={"40"}/></Link>
                     <Link style={{"margin": "auto"}} to="donate"><img src="https://img.icons8.com/color/48/000000/donate.png" alt="Donate" className="icon" width= "40" /></Link>

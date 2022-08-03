@@ -6,7 +6,7 @@ const Donate = () => {
             
                     <div className="card1">
                     <a ><img src={`${process.env.PUBLIC_URL}/img/Donation.jpeg`} alt="Donation" width="365"/></a>
-                            <h4 className='text-center'><b>Donation</b></h4>
+                            <h4 className='text-center'><b>Sumbangan</b></h4>
                     </div>
                     <div className="card1">
                     <a href="https://www.caritas.org.au/"><img src={`${process.env.PUBLIC_URL}/img/Caritas.jpeg`} alt="Caritas" width="365"/></a>

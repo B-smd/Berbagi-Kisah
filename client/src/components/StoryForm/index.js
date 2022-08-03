@@ -61,7 +61,7 @@ const StoryForm = () => {
 
   return (
     <div>
-      <h3>What's on your mind?</h3>
+      <h3>Kisah apa yang ingin kamu bagi?</h3>
 
       {Auth.loggedIn() ? (
         <>
@@ -83,7 +83,7 @@ const StoryForm = () => {
 
             <div className="col-12 col-lg-3">
               <button className="btn btn-primary btn-block py-3" type="submit">
-                Add Story
+                Tulis Kisah mu
               </button>
             </div>
             {error && (
@@ -95,7 +95,7 @@ const StoryForm = () => {
         </>
       ) : (
         <p>
-          You need to be logged in to share your story. Please{' '}
+          Kamu harus logged in untuk berbagi kisah. Silahkan{' '}
           <Link to="/login">login</Link> or <Link to="/signup">signup.</Link>
         </p>
       )}

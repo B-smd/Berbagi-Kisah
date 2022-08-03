@@ -97,11 +97,11 @@ const Hero = () => {
     />
             <div className="content">
                 <Link to="/Home" className="click"><p><img src={`${process.env.PUBLIC_URL}/img/bs.JPG`} alt="Bambang" width="500"/></p></Link>
-                <h5 className="text-center" style= {{color: "aliceblue", width: "80%", margin: "auto"}}>Sharing your life story to help another 
-                people who are struggling to move on and have positive life. Every story 
-                shared is a change to make someone feel less alone</h5>
+                <h5 className="text-center" style= {{color: "aliceblue", width: "80%", margin: "auto"}}>Berbagi kisah hidupmu untuk membantu 
+                mereka yang kesulitan untuk maju terus menjadi kuat dan positif hidupnya. Setiap kisah yang kita bagi
+                akan membuat mereka tidak merasa sendirian.</h5>
             </div>
-                <h1 className="text-center" style={{ color: "cyan"}}>Welcome</h1>
+                <h1 className="text-center" style={{ color: "cyan"}}>Selamat Datang</h1>
         </div>
     )
 }
