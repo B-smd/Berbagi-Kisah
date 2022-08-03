@@ -1,7 +1,7 @@
 {
-  "name": "life-stories-sharing",
+  "name": "berbagi-kisah",
   "version": "1.0.0",
-  "description": "People can share their stories to encourage another",
+  "description": "Kita berbagi kisah untuk memotivasi mereka yang dalam kesulitan bisa bangkit dan punya mental yang kuat untuk bangkit",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -9,15 +9,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/B-smd/Life-Stories-Sharing.git"
+    "url": "git+https://github.com/B-smd/Berbagi-Kisah.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/B-smd/Life-Stories-Sharing/issues"
+    "url": "https://github.com/B-smd/Berbagi-Kisah/issues"
   },
-  "homepage": "https://github.com/B-smd/Life-Stories-Sharing#readme",
+  "homepage": "https://github.com/B-smd/Berbagi-Kisah#readme",
   "dependencies": {
     "apollo-server-express": "^3.10.0",
     "express": "^4.18.1",
