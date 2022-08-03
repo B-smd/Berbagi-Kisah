@@ -8,7 +8,6 @@ const typeDefs = gql`
         password: String
         stories: [Story]!
     }
-
     type Story {
         _id: ID
         storyText: String
@@ -16,19 +15,16 @@ const typeDefs = gql`
         createdAt: String
         comments: [Comment]!
     }
-
     type Comment {
         _id: ID
         commentText: String
         commentAuthor: String
         createdAt: String
     }
-
     type Auth {
         token: ID!
         user: User
     }
-
     type Query {
         users: [User]
         user(username: String!): User
@@ -36,7 +32,6 @@ const typeDefs = gql`
         story(storyId: ID!): Story
         me: User
     }
-
     type Mutation {
         addUser(username: String!, email: String!, password: String!): Auth
         login(email: String!, password: String!): Auth
@@ -44,6 +39,8 @@ const typeDefs = gql`
         addComment(storyId: ID!, commentText: String!): Story
         removeStory(storyId: ID!): Story
         removeComment(storyId: ID!): Story
+        updateStory(storyId: ID!, storyText: String!):Story
+        updateComment(storyID: ID!, commentText: String!): Story
     }
 `;
 
