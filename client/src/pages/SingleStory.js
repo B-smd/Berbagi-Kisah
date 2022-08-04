@@ -28,7 +28,7 @@ const SingleStory = () => {
       <h3 className="card-header bg-dark text-light p-2 m-0">
         {story.storyAuthor} <br />
         <span style={{ fontSize: '1rem' }}>
-          posted this story on {story.createdAt}
+          kirimkan kisah ini di {story.createdAt}
         </span>
       </h3>
       <div className="bg-light py-4">

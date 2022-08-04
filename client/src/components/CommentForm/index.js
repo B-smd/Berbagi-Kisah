@@ -41,7 +41,7 @@ const CommentForm = ({ storyId, refetchStory }) => {
 
   return (
     <div>
-      <h4 >What are your thoughts on this story?</h4>
+      <h4 >Apa komentarmu terhadap kisah hidup ini?</h4>
 
       {Auth.loggedIn() ? (
         <>
@@ -70,15 +70,15 @@ const CommentForm = ({ storyId, refetchStory }) => {
 
             <div className="col-12 col-lg-3">
               <button className="btn btn-primary btn-block py-3" type="submit">
-                Add Comment
+                Memberi komentar
               </button>
             </div>
           </form>
         </>
       ) : (
         <p>
-          You need to be logged in to share your thoughts. Please{' '}
-          <Link to="/login">login</Link> or <Link to="/signup">signup.</Link>
+          Kamu perlu masuk untuk memberi komentar. Silahkan{' '}
+          <Link to="/login">masuk</Link> or <Link to="/signup">daftar.</Link>
         </p>
       )}
     </div>

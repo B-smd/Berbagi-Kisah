@@ -80,7 +80,7 @@ const StoryList = ({
                                             >
                                                 {story.storyAuthor} <br />
                                                 <span style={{ fontSize: '1rem' }}>
-                                                    posted this story on {story.createdAt}
+                                                    kirim kisah ini di {story.createdAt}
                                                 </span>
                                             </Link>
                                             <br/>
@@ -92,7 +92,7 @@ const StoryList = ({
                                     ):(
                                         <>
                                             <span style={{ fontSize: '1rem' }}>
-                                                You posted this story on {story.createdAt}
+                                                Kamu kirim kisah ini di {story.createdAt}
                                             </span>
                                         </>
                                     )}
@@ -126,14 +126,14 @@ const StoryList = ({
                                             >
                                                 {story.storyAuthor} <br />
                                                 <span style={{ fontSize: '1rem' }}>
-                                                    posted this story on {story.createdAt}
+                                                    kirim kisah ini di {story.createdAt}
                                                 </span>
                                             </Link>
                                         </>
                                     ):(
                                         <>
                                             <span style={{ fontSize: '1rem' }}>
-                                                You posted this story on {story.createdAt}
+                                                Kamu kirim kisah ini di {story.createdAt}
                                             </span>
                                         </>
                                     )}
@@ -154,7 +154,7 @@ const StoryList = ({
 
                                 <div className="col-12 col-lg-3">
                                 <button className="btn btn-primary btn-block py-3" type="submit">
-                                    Update Story
+                                    Memperbarui Kisah
                                 </button>
                                 </div>
                             </form>

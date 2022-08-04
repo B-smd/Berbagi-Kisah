@@ -95,8 +95,8 @@ const StoryForm = () => {
         </>
       ) : (
         <p>
-          Kamu harus logged in untuk berbagi kisah. Silahkan{' '}
-          <Link to="/login">login</Link> or <Link to="/signup">signup.</Link>
+          Kamu harus masuk untuk berbagi kisah. Silahkan{' '}
+          <Link to="/login">masuk</Link> or <Link to="/signup">daftar.</Link>
         </p>
       )}
     </div>

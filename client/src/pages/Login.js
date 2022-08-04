@@ -48,8 +48,8 @@ const Login = (props) => {
           <div className="card-body">
             {data ? (
               <p>
-                Success! You may now head{' '}
-                <Link to="/">back to the homepage.</Link>
+                Berhasil! Kamu bisa memulai{' '}
+                <Link to="/">kembali ke halaman utama.</Link>
               </p>
             ) : (
               <form onSubmit={handleFormSubmit}>
@@ -74,7 +74,7 @@ const Login = (props) => {
                   style={{ cursor: 'pointer' }}
                   type="submit"
                 >
-                  Submit
+                  Kirimkan
                 </button>
               </form>
             )}

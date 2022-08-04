@@ -96,7 +96,7 @@ const Hero = () => {
       }}
     />
             <div className="content">
-                <Link to="/Home" className="click"><p><img src={`${process.env.PUBLIC_URL}/img/bs.JPG`} alt="Bambang" width="500"/></p></Link>
+                <Link to="/Home" className="click"><p><img src={`${process.env.PUBLIC_URL}/img/bs.png`} alt="Bambang" width="500"/></p></Link>
                 <h5 className="text-center" style= {{color: "aliceblue", width: "80%", margin: "auto"}}>Berbagi kisah hidupmu untuk membantu 
                 mereka yang kesulitan untuk maju terus menjadi kuat dan positif hidupnya. Setiap kisah yang kita bagi
                 akan membuat mereka tidak merasa sendirian.</h5>

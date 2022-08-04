@@ -81,7 +81,7 @@ const StoryUpdateForm = ({storyId, storyText}) => {
 
             <div className="col-12 col-lg-3">
               <button className="btn btn-primary btn-block py-3" type="submit">
-                Update Story
+                Memperbarui kisah
               </button>
             </div>
             {error && (
@@ -93,7 +93,7 @@ const StoryUpdateForm = ({storyId, storyText}) => {
         </>
       ) : (
         <p>
-          You need to be logged in to update story. Please{' '}
+          Kamu harus masuk untuk memperbarui kisah. Silahkan{' '}
           <Link to="/login">login</Link> or <Link to="/signup">signup.</Link>
         </p>
       )}
